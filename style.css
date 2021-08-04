@@ -10,14 +10,25 @@ body {
   background-position: right;
   text-align: center;
   color: #fff;
+  opacity: 0;
+  animation-name: fade;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
 }
+
+@keyframes fade{
+  from{opacity: 0;}
+  to{opacity:1;}
+}
+
 h1 {
   font-size: 50px;
   min-height: 40vh;
   max-width: 90%;
   margin: auto;
   animation-name: head;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   position: relative;
@@ -39,7 +50,7 @@ p {
   font-size: 20px;
   word-break: break-all;
   animation-name: para;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   position: relative;
